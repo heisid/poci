@@ -5,15 +5,12 @@
 #include <editline/history.h>
 #endif
 
-#define INPUT_BUFFER_SIZE 2048
-
-static char input[INPUT_BUFFER_SIZE];
-
 int main(int argc, char** argv) {
     while(1) {
-        fputs("poci> ", stdout);
-        fgets(input, INPUT_BUFFER_SIZE, stdin);
+        char* input = readline("poci>");
+        add_history(input);
         printf("%s", input);
+        free(input);
     }
     return 0;
 }
