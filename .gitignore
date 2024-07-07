@@ -1,0 +1,43 @@
+# CLion-specific
+.idea/
+cmake-build-*/
+
+# Compiled files
+*.o
+*.obj
+*.so
+*.dylib
+*.dll
+*.a
+*.lib
+*.out
+*.exe
+
+# Temporary files
+*~
+*.tmp
+*.temp
+
+# Vim-specific
+*.swp
+*.swo
+*.vimbackup
+*.viminfo
+
+# Backup files
+*.bak
+*.old
+*.orig
+*.backup
+
+# CMake-generated files
+CMakeCache.txt
+CMakeFiles/
+cmake_install.cmake
+Makefile
+install_manifest.txt
+
+# Logs and databases
+*.log
+*.sql
+*.sqlite
